@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FACE RECOGNITION ATTENDANCE SYSTEM</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrapicons@1.10.3/font/bootstrap-icons.css"
+    />
+
+
+    <style>
+      .heading1 {
+        font-size: 2rem;
+        font-weight: bolder;
+        color: green;
+        padding: 0.5rem 3rem;
+        cursor: pointer;
+      }
+      .ubtn {
+        background-color: #000;
+        color: #fff;
+        padding: 0.5rem;
+        border: none;
+        font-size: large;
+        font-weight: bold;
+        border-radius: 10px;
+        transition: transform 1s;
+      }
+      .ubtn:hover {
+        background-color: green;
+        transform: scale(1.1);
+      }
+    </style>
+
+  </head>
+
+  
+  <body>
+    <!-- part-1 -->
+    <div class="container">
+      <h1 class="text-center heading1">MARKING ATTENDENCE</h1>
+    </div>
+    <!-- part-2 -->
+    <div class="container mt-5">
+      <div class="mx-auto" style="width: 700px">
+        <img src="{{ url_for('video_feed') }}" />
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="mx-auto" style="width: 150px">
+        <a href="http://127.0.0.1:5000/">
+          <button type="button" class="ubtn">
+            Upload New image
+            <i class="bi bi-images"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+    <p class="mt-5 mb-3 text-muted text-center">
+      &copy; 2024-2025 by arhaan arif
+    </p>
+  </body>
+</html>
